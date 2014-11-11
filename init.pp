@@ -22,3 +22,7 @@ class { "ant" :
 class { "maven" : 
   version => "3.2.3",
 }
+
+class { "gradle" : 
+  version => "2.2",
+}
