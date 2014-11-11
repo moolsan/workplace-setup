@@ -1,0 +1,8 @@
+To make the manifests run, add another manifest to the modules directory (e.g. config.pp) where you 
+configure the workplace::base module, e.g.
+
+    class { "workplace::base" :
+      user  => "foo",
+      group => "foo",
+    }
+
