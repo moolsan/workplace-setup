@@ -26,3 +26,7 @@ class { "maven" :
 class { "gradle" : 
   version => "2.2",
 }
+
+class { "vagrant" :
+  version => "1.6.5",
+}

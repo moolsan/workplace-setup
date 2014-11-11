@@ -1,0 +1,1 @@
+alias ws='cd ~/Workspaces'
