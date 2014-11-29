@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z (which lsb_release) ]; then
+if [ -z $(which lsb_release) ]; then
   apt-get --assume-yes install lsb-base
 fi
 
@@ -12,5 +12,3 @@ wget -O /tmp/puppetlabs-release-$(lsb_release -sc).deb http://apt.puppetlabs.com
 dpkg -i /tmp/puppetlabs-release-$(lsb_release -sc).deb
 apt-get update
 apt-get --assume-yes install puppet
-
-puppet module install maestrodev-wget
