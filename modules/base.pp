@@ -13,9 +13,9 @@ class workplace::base(
     fail ("Group is not defined!")
   }
 
-  $needed_packages = [ 'wget', 'unzip', 'git' ]
+  $base_packages = [ 'wget', 'unzip', 'git', 'curl', 'keepass2', 'ansible' ]
 
-  package { $needed_packages :
+  package { $base_packages :
     ensure => latest,
   }
 

@@ -30,3 +30,10 @@ class { "gradle" :
 class { "vagrant" :
   version => "1.6.5",
 }
+
+class { virtualbox :
+  major_version  => "4.3",
+  minor_version  => "18",
+  patch_version  => "96516",
+  ubuntu_version => "raring",
+}
