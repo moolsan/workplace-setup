@@ -13,7 +13,16 @@ class base(
     fail ("Group is not defined!")
   }
 
-  $base_packages = [ 'wget', 'unzip', 'git', 'curl', 'keepass2', 'ansible' ]
+  $base_packages = [ 
+    'wget', 
+    'unzip', 
+    'git', 
+    'curl', 
+    'keepass2', 
+    'ansible', 
+    'chromium-browser', 
+    'aptitude' 
+  ]
 
   package { $base_packages :
     ensure => latest,
