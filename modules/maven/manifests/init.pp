@@ -2,7 +2,7 @@ class maven (
   $version      = "3.2.3",
   $destination  = "${software_base_folder}/maven",
   $mirror       = "http://apache.openmirror.de",
-) inherits workplace::base {
+) inherits base {
   
   # http://apache.openmirror.de/maven/maven-3/3.2.3/binaries/apache-maven-3.2.3-bin.zip
 

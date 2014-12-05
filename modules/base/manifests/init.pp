@@ -1,4 +1,4 @@
-class workplace::base(
+class base(
   $user = undef, 
   $group = undef,
   $download_folder = "/home/${user}/Downloads",
@@ -31,4 +31,18 @@ class workplace::base(
   file { "/home/${user}/bin" :
     ensure => directory,
   }
+
+  file { "/home/${user}/Workspace" :
+    ensure => directory,
+  }
+  
+  file { "/home/${user}/.local/share/applications" :
+    source  => "puppet:///modules/base/applications",
+    recurse => true,
+  }
+
+  file { "/home/${user}/.bash_aliases" :
+    source  => "puppet:///modules/base/.bash_aliases",
+  }
+  
 }

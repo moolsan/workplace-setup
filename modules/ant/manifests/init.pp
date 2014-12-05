@@ -2,7 +2,7 @@ class ant (
   $version      = "1.9.4",
   $destination  = "${software_base_folder}/ant",
   $mirror       = "http://apache.openmirror.de",
-) inherits workplace::base {
+) inherits base {
 
   file { $destination :
     ensure => directory,

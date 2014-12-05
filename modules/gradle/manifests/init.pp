@@ -2,7 +2,7 @@ class gradle (
   $version      = "2.2",
   $destination  = "${software_base_folder}/gradle",
   $mirror       = "https://services.gradle.org/distributions/",
-) inherits workplace::base {
+) inherits base {
   
   file { $destination :
     ensure => directory,

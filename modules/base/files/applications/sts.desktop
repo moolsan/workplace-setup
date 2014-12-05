@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=STS
+Comment=STS
+Exec=/home/bs/software/sts/default/STS
+Icon=/home/bs/software/sts/default/icon.xpm
+Terminal=false
+Type=Application
+Encoding=UTF-8

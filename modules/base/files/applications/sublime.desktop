@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sublime Text
+Comment=Sublime Text
+Exec=/home/bs/software/sublime-text/default/sublime_text
+Icon=/home/bs/software/sublime-text/default/Icon/48x48/sublime_text.png
+Terminal=false
+Type=Application
+Encoding=UTF-8

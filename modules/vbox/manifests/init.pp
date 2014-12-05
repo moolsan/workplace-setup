@@ -1,9 +1,9 @@
-class virtualbox(
+class vbox(
   $major_version  = "4.3",
   $minor_version  = "18",
   $patch_version  = "96516",
   $ubuntu_version = "raring",
-) inherits workplace::base {
+) inherits base {
 
   $version = "${major_version}.${minor_version}"
   $filename = "virtualbox-${major_version}_${version}-${patch_version}~Ubuntu~${ubuntu_version}_amd64.deb"
@@ -19,6 +19,7 @@ class virtualbox(
   exec { "install VirtualBox ${version}" :
     command => "/usr/bin/dpkg -i ${filename}",
     cwd     => "${download_folder}",
+    refreshonly => true,
   }
 
 }

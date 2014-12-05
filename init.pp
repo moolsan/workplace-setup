@@ -1,19 +1,9 @@
-#
-# Puppet w/ Shell bootstrap +
-# Ant +
-# Maven +
-# Gradle
-# STS
-# IDEA
-# JMeter
-# Vagrant
-# VirtualBox
-# SublimeText (2/3?)
-# Ansible
-# Docker
-#
+import 'config.pp'
 
-import "modules/*"
+class { "base" :
+  user  => "${user}",
+  group => "${group}",
+}
 
 class { "ant" : 
   version => "1.9.4",
@@ -31,7 +21,7 @@ class { "vagrant" :
   version => "1.6.5",
 }
 
-class { virtualbox :
+class { "vbox" :
   major_version  => "4.3",
   minor_version  => "18",
   patch_version  => "96516",
